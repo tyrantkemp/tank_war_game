@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="isometric" renderorder="right-down" width="30" height="30" tilewidth="120" tileheight="80" nextobjectid="1">
+ <tileset firstgid="1" name="草地" tilewidth="120" tileheight="80" spacing="1">
+  <image source="草地.png" width="120" height="80"/>
+  <tile id="0">
+   <properties>
+    <property name="ismove" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="ground" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAMA6DWv+nZWBMOfpqkADAqDw4AsOoAx1gDhA==
+  </data>
+ </layer>
+</map>

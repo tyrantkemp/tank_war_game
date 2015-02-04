@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="staggered" renderorder="right-down" width="15" height="30" tilewidth="80" tileheight="40" staggeraxis="y" staggerindex="odd" nextobjectid="1">
+ <tileset firstgid="1" name="草地" tilewidth="80" tileheight="40" spacing="1">
+  <image source="草地.png" width="120" height="80"/>
+ </tileset>
+ <layer name="块层 1" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYBzFo3gUj+JRPIpHKAYAOO4Bww==
+  </data>
+ </layer>
+ <layer name="meta" width="15" height="30">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFlALGAdJLDcCIRlNqzmAHg8GfQyWsRsEoGCkAACygAAk=
+  </data>
+ </layer>
+</map>

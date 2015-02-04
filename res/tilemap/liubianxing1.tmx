@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="hexagonal" renderorder="right-down" width="20" height="20" tilewidth="80" tileheight="40" hexsidelength="0" staggeraxis="y" staggerindex="odd" nextobjectid="1">
+ <tileset firstgid="1" name="QQ20150201-3@2x" tilewidth="80" tileheight="40" spacing="1">
+  <image source="../../QQ20150201-3@2x.png" width="746" height="498"/>
+ </tileset>
+ <layer name="块层 1" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYIRiJiSaXMCIA5NrJi3Mg/lz1DzyzEM3h5ruGwnmwfTDMDXNo1b8UsMsXOZRIz6o6T5a5zdqlqeUphdqug0EAEk+ALQ=
+  </data>
+ </layer>
+</map>

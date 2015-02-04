@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="12" height="8" tilewidth="80" tileheight="80" nextobjectid="1">
+ <tileset firstgid="1" name="towerblocks" tilewidth="80" tileheight="80" spacing="1">
+  <image source="../../../Downloads/cocos2d/Chapter 7/mapResource/towerBlocks.png" width="512" height="512"/>
+ </tileset>
+ <layer name="块层 1" width="12" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAdsBChhguPekYgZoZiJizqKXUPzCxWIOYgwj1cWMSR1XMzINwLwjxYxHkYSAP8QCwAxABgdADD
+  </data>
+ </layer>
+</map>
