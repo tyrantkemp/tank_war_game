@@ -3,7 +3,6 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="MainScene.csd" />
         <Folder Name="ipad">
           <Image Name="CloseNormal.png" />
           <Image Name="CloseSelected.png" />
@@ -19,6 +18,27 @@
           <Image Name="CloseSelected.png" />
           <Image Name="HelloWorld.png" />
         </Folder>
+        <Folder Name="tilemap">
+          <Folder Name="tileres">
+            <Image Name="towerBlocks.png" />
+          </Folder>
+          <TmxFile Name="120_80.tmx" />
+          <TmxFile Name="1212.tmx" />
+          <TmxFile Name="1313.tmx" />
+          <TmxFile Name="gate1.tmx" />
+          <TmxFile Name="gate2.tmx" />
+          <TmxFile Name="iso-test.tmx" />
+          <TmxFile Name="liu2.tmx" />
+          <TmxFile Name="sssss.tmx" />
+          <TmxFile Name="tet111.tmx" />
+          <Image Name="lingxing.png" />
+          <Image Name="liu.png" />
+          <Image Name="tank.png" />
+        </Folder>
+        <Project Name="BtnStart.csd" />
+        <Project Name="Node.csd" />
+        <Project Name="Layer.csd" />
+        <Project Name="ctl_right.csd" />
       </RootFolder>
     </Group>
   </SolutionFolder>

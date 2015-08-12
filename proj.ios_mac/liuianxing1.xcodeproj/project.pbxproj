@@ -51,6 +51,7 @@
 		A26E47D3A498AB0ADAC85CF9 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 435C40AC8DC8098A3DFD0FE0 /* res */; };
 		AD9F4042A3BB98273BCD18C0 /* res in Resources */ = {isa = PBXBuildFile; fileRef = 435C40AC8DC8098A3DFD0FE0 /* res */; };
 		AF82BC981A80A18300B2B70E /* tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF82BC961A80A18300B2B70E /* tools.cpp */; };
+		AFC32BB51A8B949B00ACCBE8 /* Unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFC32BB31A8B949B00ACCBE8 /* Unit.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -111,6 +112,8 @@
 		AF82BC961A80A18300B2B70E /* tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tools.cpp; sourceTree = "<group>"; };
 		AF82BC971A80A18300B2B70E /* tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		AF82BC991A80A1A400B2B70E /* contains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contains.h; sourceTree = "<group>"; };
+		AFC32BB31A8B949B00ACCBE8 /* Unit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Unit.cpp; sourceTree = "<group>"; };
+		AFC32BB41A8B949B00ACCBE8 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -226,11 +229,12 @@
 			children = (
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
+				AF286A921A8200D1000F00B8 /* component */,
+				AF82BC991A80A1A400B2B70E /* contains.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 				AF82BC961A80A18300B2B70E /* tools.cpp */,
 				AF82BC971A80A18300B2B70E /* tools.h */,
-				AF82BC991A80A1A400B2B70E /* contains.h */,
 			);
 			name = Classes;
 			path = ../Classes;
@@ -282,6 +286,15 @@
 			name = Icons;
 			path = ios;
 			sourceTree = SOURCE_ROOT;
+		};
+		AF286A921A8200D1000F00B8 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				AFC32BB31A8B949B00ACCBE8 /* Unit.cpp */,
+				AFC32BB41A8B949B00ACCBE8 /* Unit.h */,
+			);
+			name = component;
+			sourceTree = "<group>";
 		};
 		F8E442E8A6DD0F13A8C853CC /* mac-libs */ = {
 			isa = PBXGroup;
@@ -417,6 +430,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
+				AFC32BB51A8B949B00ACCBE8 /* Unit.cpp in Sources */,
 				AF82BC981A80A18300B2B70E /* tools.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +594,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "";
 			};
 			name = Debug;
 		};
@@ -606,10 +621,12 @@
 					"/Applications/Cocos/frameworks/cocos2d-x/external/chipmunk/include/chipmunk",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "";
 			};
 			name = Release;
 		};

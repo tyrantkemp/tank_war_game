@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="12" height="8" tilewidth="80" tileheight="80" nextobjectid="1">
+ <tileset firstgid="1" name="towerBlocks" tilewidth="80" tileheight="80" spacing="1">
+  <image source="tileres/towerBlocks.png" width="512" height="512"/>
+ </tileset>
+ <layer name="main" width="12" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAPsGAR4wdiASLU8wIxHxnmw4AkiepxmY8L0xMAAHQUAIA=
+  </data>
+ </layer>
+ <objectgroup name="对象层 1" visible="0"/>
+</map>
